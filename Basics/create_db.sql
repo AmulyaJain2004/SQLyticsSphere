@@ -1,5 +1,5 @@
-show databases; 
+SHOW DATABASES;
 
-create database oneshot;
+CREATE DATABASE mydb;
 
-show databases; 
+USE mydb;
