@@ -68,6 +68,6 @@ db.collection.insertMany() -> Inserts multiple documents into a collection.
 To insert one document (record)
 ```
 db.inventory.insertOne(
-{item: "canvas",
-})
+{item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm"}}
+)
 ```
