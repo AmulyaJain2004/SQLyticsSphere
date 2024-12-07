@@ -92,3 +92,16 @@ db.inventory.insertMany(
     ]
 )
 ```
+Output
+```
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('675407b9a99dc4d25fae6646'),
+    '1': ObjectId('675407b9a99dc4d25fae6647'),
+    '2': ObjectId('675407b9a99dc4d25fae6648'),
+    '3': ObjectId('675407b9a99dc4d25fae6649'),
+    '4': ObjectId('675407b9a99dc4d25fae664a')
+  }
+}
+```
