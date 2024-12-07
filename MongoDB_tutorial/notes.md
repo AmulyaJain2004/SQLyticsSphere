@@ -68,6 +68,27 @@ db.collection.insertMany() -> Inserts multiple documents into a collection.
 To insert one document (record)
 ```
 db.inventory.insertOne(
-{item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm"}}
+    {item: "canvas", qty: 100, tags: ["cotton"], size: { h: 28, w: 35.5, uom: "cm"}}
+)
+```
+Output
+```
+{
+  acknowledged: true,
+  insertedId: ObjectId('6754053aa99dc4d25fae6645')
+}
+```
+same item added but will generate unique id everytime.
+
+To insert many documents at once (records)
+```
+db.inventory.insertMany(
+    [
+        {item: "canvas1", qty: 70, tags: ["cotton"], size: { h: 8, w: 32, uom: "cm"}},
+        {item: "canvas2", qty: 90, tags: ["copper"], size: { h: 48, w: 35.5, uom: "cm"}},
+        {item: "canvas3", qty: 100, tags: ["zinc"], size: { h: 20, w: 35, uom: "cm"}},
+        {item: "canvas4", qty: 200, tags: ["iron"], size: { h: 28, w: 37, uom: "cm"}},
+        {item: "canvas5", qty: 20, tags: ["aluminium"], size: { h: 28, w: 50, uom: "cm"}}
+    ]
 )
 ```
