@@ -1,5 +1,0 @@
-SHOW DATABASES;
-
-CREATE DATABASE mydb;
-
-USE mydb;
